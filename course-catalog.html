@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Catalog</title>
+    <style>
+        .course-comparison {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .course-comparison th,
+        .course-comparison td {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+        }
+
+        aside {
+            width: 20%;
+        }
+
+        section.courses-list {
+            width: 80%;
+        }
+
+        article figure img {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EduConnect – Course Catalog</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course-catalog.html" class="active">Course Catalog</a></li>
+        </ul>
+    </nav>
+</header>
+
+<nav aria-label="breadcrumb">
+    <ol>
+        <li><a href="../index.html">Home</a></li>
+        <li>Course Catalog</li>
+    </ol>
+</nav>
+
+<section>
+    <h2>Search and Sort Courses</h2>
+    <form>
+        <input type="search" placeholder="Search courses..." name="search">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+            <option>Popularity</option>
+            <option>Price</option>
+            <option>Rating</option>
+            <option>Newest</option>
+        </select>
+        <span>Results: 6 courses</span>
+    </form>
+</section>
+
+<main>
+    <aside>
+        <h2>Filters</h2>
+        <form>
+            <h3>Category</h3>
+            <label><input type="checkbox"> Web Development</label><br>
+            <label><input type="checkbox"> Data Science</label><br>
+            <label><input type="checkbox"> Marketing</label><br>
+
+            <h3>Level</h3>
+            <label><input type="radio" name="lvl"> Beginner</label><br>
+            <label><input type="radio" name="lvl"> Intermediate</label><br>
+            <label><input type="radio" name="lvl"> Advanced</label><br>
+
+            <h3>Duration</h3>
+            <select>
+                <option>Less than 5 hours</option>
+                <option>5–10 hours</option>
+                <option>More than 10 hours</option>
+            </select>
+
+            <h3>Rating</h3>
+            <input type="range" min="1" max="5" value="4">
+            <br><br>
+            <button type="submit">Apply Filters</button>
+        </form>
+    </aside>
+
+    <section class="courses-list">
+        <h2>Available Courses</h2>
+        <article>
+            <figure>
+                <img src="images/html-and-css.webp" alt="Course Image">
+                <figcaption>Intro to HTML & CSS</figcaption>
+            </figure>
+            <h3>HTML & CSS for Beginners</h3>
+            <p>Learn the basics of web development with hands-on examples.</p>
+            <p><strong>Instructor:</strong> John Doe</p>
+            <dl>
+                <dt>Duration:</dt><dd>6 hours</dd>
+                <dt>Level:</dt><dd>Beginner</dd>
+                <dt>Price:</dt><dd>$20</dd>
+                <dt>Rating:</dt><dd>⭐⭐⭐⭐</dd>
+            </dl>
+            <ul>
+                <li>Interactive lessons</li>
+                <li>Real-world projects</li>
+                <li>Certificate included</li>
+            </ul>
+            <a href="course-detail.html">View Details</a>
+        </article>
+    </section>
+</main>
+
+<section>
+    <h2>Course Comparison</h2>
+    <table class="course-comparison">
+        <caption>Comparison of selected courses</caption>
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Price</th>
+                <th>Duration</th>
+                <th>Level</th>
+                <th>Rating</th>
+                <th>Enrollment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">HTML & CSS Basics</td>
+                <td>$20</td>
+                <td>6h</td>
+                <td>Beginner</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>5000+</td>
+            </tr>
+            <tr>
+                <td colspan="5">Special discount available this month!</td>
+            </tr>
+            <tr>
+                <td>JavaScript Essentials</td>
+                <td>$30</td>
+                <td>8h</td>
+                <td>Intermediate</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>8000+</td>
+            </tr>
+            <tr>
+                <td>Python for Data Science</td>
+                <td>$40</td>
+                <td>10h</td>
+                <td>Intermediate</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>6500+</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+</body>
+</html>

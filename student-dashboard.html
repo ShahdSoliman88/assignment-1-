@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f2f2f2;
+            padding: 10px 20px;
+        }
+        nav.breadcrumb ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+        nav.breadcrumb ul li {
+            display: inline;
+        }
+        nav.breadcrumb ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        div.grid-container {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            gap: 20px;
+            padding: 20px;
+        }
+        main, aside {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        dl dt {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>EduConnect - Online Learning Platform</h1>
+    <nav class="breadcrumb">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/course-catalog.html">Course catalog</a></li>
+            <li><a href="pages/registration.html">Register</a></li>
+            <li><a href="pages/thank.html">Thank</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="grid-container">
+<main>
+    <section id="personal-info">
+        <h2>Welcome, Shahd!</h2>
+        <figure>
+            <img src="images/WhatsAppImage2025_12_06at20.21.16_e47d64e2.jpg" width="200" alt="Profile Photo">
+            <figcaption>Profile Photo</figcaption>
+        </figure>
+        <dl>
+            <dt>Total Courses:</dt><dd>12</dd>
+            <dt>Completed Courses:</dt><dd>5</dd>
+            <dt>In Progress Courses:</dt><dd>3</dd>
+            <dt>Certificates:</dt><dd>5</dd>
+        </dl>
+    </section>
+
+    <section id="enrolled-courses">
+        <h2>Enrolled Courses</h2>
+        <article>
+            <h3>HTML & CSS Foundations</h3>
+            <figure>
+                <img src="images/WhatsAppImage2025_12_06at17.13.41_a3968087.jpg" width="200" alt="HTML Course">
+            </figure>
+            <p>Instructor: Dr. Ahmed</p>
+            <p>Progress: 70%</p>
+            <time datetime="2025-01-13">Last Accessed: Jan 13, 2025</time><br>
+            <a href="#">Continue Learning</a>
+        </article>
+
+        <article>
+            <h3>JavaScript Essentials</h3>
+            <figure>
+                <img src="images/WhatsAppImage2025_12_06at17.13.42_c09782f4.jpg" width="200" alt="JS Course">
+            </figure>
+            <p>Instructor: Dr. John</p>
+            <p>Progress: 40%</p>
+            <time datetime="2025-01-10">Last Accessed: Jan 10, 2025</time><br>
+            <a href="#">Continue Learning</a>
+        </article>
+
+        <article>
+            <h3>Database Course</h3>
+            <figure>
+                <img src="images/WhatsAppImage2025_12_06at17.13.41_9764b377.jpg" width="200" alt="Database Course">
+            </figure>
+            <p>Instructor: Dr. Maya</p>
+            <p>Progress: 50%</p>
+            <time datetime="2025-01-08">Last Accessed: Jan 8, 2025</time><br>
+            <a href="#">Continue Learning</a>
+        </article>
+    </section>
+
+    <section id="progress-statistics">
+        <h2>Progress Statistics</h2>
+        <dl>
+            <dt>Courses Completed:</dt><dd>5</dd>
+            <dt>Courses In Progress:</dt><dd>3</dd>
+            <dt>Total Learning Hours:</dt><dd>120 Hours</dd>
+            <dt>Certificates Earned:</dt><dd>3</dd>
+            <dt>Average Quiz Score:</dt><dd>88%</dd>
+            <dt>Current Streak:</dt><dd>7 days</dd>
+        </dl>
+    </section>
+
+    <section id="upcoming-deadlines">
+        <h2>Upcoming Deadlines</h2>
+        <ol>
+            <li>Assignment 4 (HTML Course) | Due: <time datetime="2025-01-20">Jan 20</time> | Priority: High</li>
+            <li>JavaScript Quiz 1 | Due: <time datetime="2025-01-22">Jan 22</time> | Priority: Medium</li>
+            <li>Database Project | Due: <time datetime="2025-01-25">Jan 25</time> | Priority: High</li>
+        </ol>
+    </section>
+
+    <section id="recent-activity">
+        <h2>Recent Activity</h2>
+        <article>
+            <h3>Course Started</h3>
+            <p>You enrolled in “JavaScript Essentials”.</p>
+            <time datetime="2025-01-12">Jan 12, 2025</time>
+        </article>
+
+        <article>
+            <h3>Assignment Submitted</h3>
+            <p>You submitted Assignment 2 for HTML Course.</p>
+            <time datetime="2025-01-11">Jan 11, 2025</time>
+        </article>
+
+        <article>
+            <h3>Quiz Completed</h3>
+            <p>You completed Quiz 1 in Database Course.</p>
+            <time datetime="2025-01-10">Jan 10, 2025</time>
+        </article>
+
+        <article>
+            <h3>Certificate Earned</h3>
+            <p>You achieved the HTML Certificate.</p>
+            <time datetime="2025-01-05">Jan 5, 2025</time>
+        </article>
+
+        <article>
+            <h3>Course Progress</h3>
+            <p>Your JavaScript progress increased to 40%.</p>
+            <time datetime="2025-01-04">Jan 4, 2025</time>
+        </article>
+    </section>
+</main>
+
+<aside>
+    <section>
+        <h2>Recommended Courses</h2>
+        <ul>
+            <li><a href="#">React for Beginners</a></li>
+            <li><a href="#">Backend with Node.js</a></li>
+            <li><a href="#">Advanced CSS Flexbox</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Achievements / Badges</h2>
+        <ul>
+            <li><img src="images/WhatsAppImage2025_12_06at17.13.41_58e11e22.jpg" width="200" alt="Badge 1"></li>
+            <li><img src="images/WhatsAppImage2025_12_06at17.13.41_e662a4c6.jpg" width="200" alt="Badge 2"></li>
+            <li><img src="images/WhatsAppImage2025_12_06at17.13.41_22ea574b.jpg" width="60" alt="Badge 3"></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Learning Goals</h2>
+        <ul>
+            <li>Finish 3 courses this month</li>
+            <li>Study 10 hours weekly</li>
+            <li>Improve JavaScript knowledge</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Calendar</h2>
+        <figure>
+            <img src="images/WhatsAppImage2025_12_06at17.13.41_50c2597f.jpg" width="200" alt="Calendar">
+            <figcaption>Monthly Study Calendar</figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="pages/course-catalog.html">Browse Courses</a></li>
+            <li><a href="pages/registration.html">Register for Course</a></li>
+            <li><a href="pages/contact.html">Contact Support</a></li>
+        </ul>
+    </section>
+</aside>
+</div>
+</body>
+</html>
